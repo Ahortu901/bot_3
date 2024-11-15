@@ -1,0 +1,28 @@
+AI_Trading_System/
+│
+├── src/
+│   ├── main.cpp                      # Main entry point for the trading system
+│   ├── data_preprocessing.cpp        # Data preprocessing logic (technical indicators)
+│   ├── model_inference.cpp           # Code for running model inference (TensorFlow C++ API or similar)
+│   ├── trading_logic.cpp             # The trading strategy logic (buy/sell, risk management)
+│   └── market_data.cpp               # Code to fetch market data from an API (Alpaca or others)
+│
+├── include/
+│   ├── data_preprocessing.h          # Header for data preprocessing functions
+│   ├── model_inference.h             # Header for model inference functions
+│   ├── trading_logic.h               # Header for trading logic functions
+│   └── market_data.h                 # Header for market data functions
+│
+├── external/                         # External libraries (like TensorFlow C++ API, third-party libraries)
+│   ├── tensorflow/
+│   │   ├── tensorFlow.so             # Shared object for TensorFlow (or similar deep learning library)
+│   │   └── libtensorflow_cc.so      # TensorFlow C++ API library (for model inference)
+│   └── libcurl/                      # If using libcurl for fetching market data
+│       └── libcurl.so                # libcurl shared library
+│
+├── config/                           # Configuration files
+│   ├── config.json                   # Configuration for API keys, model paths, etc.
+│   └── model_config.json             # Specific model configuration (e.g., input/output layers)
+│
+├── CMakeLists.txt                    # CMake build script for the C++ project
+└── README.md                         # Project description and instructions
