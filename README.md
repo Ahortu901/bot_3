@@ -39,3 +39,8 @@ make
 ## Running the System
 
 After building the project, run the system with:
+
+```bash
+./ai_trading_system
+```
+This will start fetching market data, running predictions with the trained model, and executing trades.
